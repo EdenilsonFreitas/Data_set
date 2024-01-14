@@ -8,6 +8,23 @@ with st.sidebar:
     selected = option_menu(
         menu_title=None,  # required
         options=["Home", "Projects", "Contact"],  # required
+        icons=["house","book","envelope"], #optionol
+        menu_icon= "cast",
+        default_index=0,
+        orientation="horizontal",
+        styles={
+            "container":{
+                "padding":"0!important", "backgraund-color"
+                "icon":{
+                    "color":"orange","font-size":"25px"
+                },
+                "nav-link":{"font-size":"25px","text-align":"left","marigin":"0px",
+                "--hover-color":"#eee",
+
+                },
+                "nav-link-selected":{"backgraund-color":"green"},
+            },
+        },
     )
 
 if selected == "Home":
